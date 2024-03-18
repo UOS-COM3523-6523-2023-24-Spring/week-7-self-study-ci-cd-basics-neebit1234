@@ -25,3 +25,7 @@ This is because the behaviour of `complex_function` is non-deterministic (depend
 
 Such non-deterministic behaviour is not uncommon in real-world software system.
 How can we test such non-deterministic behaviour? Think about this. (No need to implement anything)
+
+To test a non-deterministic behaviour we should make it deterministic. For this function we could pass fake values from
+the random_function to meet each possible result of the non-deterministic function. This allows checking each possible 
+path through the function.
